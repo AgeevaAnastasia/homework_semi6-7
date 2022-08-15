@@ -13,7 +13,7 @@ double[,] GetMatrix(int m, int n)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = Math.Round(rnd.NextDouble() * 100, 1);
+            matrix[i, j] = Math.Round(rnd.NextDouble() * 10, 1);
             int sign = rnd1.Next(0, 2);
             if (sign == 0) matrix[i, j] = matrix[i, j] * -1;
         }
